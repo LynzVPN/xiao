@@ -322,19 +322,18 @@ echo -e "${IBlue} ╘═══════════════════�
 echo -e "${IBlue}╒═══════════════════════════════════════════════════╕${NC}"
 echo -e "${IBlue}│ ${NC} SSH  ${NC}: $ressh"" │ ${NC} NGINX ${NC}: $resngx"" │ ${NC}  XRAY ${NC}: $resv2r"" │${NC} GOOD ${IBlue} │"
 echo -e "${IBlue}╘═══════════════════════════════════════════════════╛${NC}"
-
 echo -e "  ${IBlue} ╒════════════════════════════════════════════╕${NC}"
 echo -e "${NC}   ${NC}                   ${NC}𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔${NC}" 
 echo -e "            ${BIBlue} ════════════════════════════${NC}"
-echo -e "       ${NC}             ${NC}[${NC}01${NC}] SSH     ${NC}"
-echo -e "       ${NC}             ${NC}[${NC}02${NC}] VMESS   ${NC}"
-echo -e "       ${NC}             ${NC}[${NC}03${NC}] VLESS   ${NC}"
-echo -e "       ${NC}             ${NC}[${NC}04${NC}] TROJAN  ${NC}"
-echo -e "       ${NC}             ${NC}[${NC}05${NC}] SETING  ${NC}"
-echo -e "       ${NC}             ${NC}[${NC}01${NC}] TRIAL   ${NC}"
-echo -e "       ${NC}             ${NC}[${NC}07${NC}] BACKUP   ${NC}"
-echo -e "                    ${NC}[${NC}08${NC}] ADD-HOST      ${NC}"
-echo -e "                    ${NC}[${NC}08${NC}] RUNNING SERVICE      ${NC}"
+echo -e "         ${NC}             ${NC}[${NC}01${NC}] SSH     ${NC}"
+echo -e "         ${NC}             ${NC}[${NC}02${NC}] VMESS   ${NC}"
+echo -e "         ${NC}             ${NC}[${NC}03${NC}] VLESS   ${NC}"
+echo -e "         ${NC}             ${NC}[${NC}04${NC}] TROJAN  ${NC}"
+echo -e "         ${NC}             ${NC}[${NC}05${NC}] SETING  ${NC}"
+echo -e "         ${NC}             ${NC}[${NC}06${NC}] TRIAL   ${NC}"
+echo -e "         ${NC}             ${NC}[${NC}07${NC}] BACKUP   ${NC}"
+echo -e "                      ${NC}[${NC}08${NC}] ADD-HOST      ${NC}"
+echo -e "                      ${NC}[${NC}08${NC}] CEK RUNNING      ${NC}"
 echo -e "  ${BIBlue} ╘════════════════════════════════════════════╛${NC}"
 
 
@@ -346,9 +345,9 @@ datediff() {
 }
 mai="datediff "$Exp" "$DATE""
 echo -e "       ${BIBlue}╒═════════════════════════════════════╕${NC}"
-echo -e "       ${NC}│  Version      ${NC} :  V.3"
-echo -e "       ${NC}│  User       ${NC}   :\033[1;36m $Name \e[0m"
-echo -e "       ${NC}│  Expiry script${NC} : ${NC}$Exp${NC} "
+echo -e "       ${IBlue}│${NC}   Version      ${NC} :  V.3 Tunnel"
+echo -e "       ${IBlue}│${NC}   User       ${NC}   :\033[1;36m $Name \e[0m"
+echo -e "       ${IBlue}│${NC}   Expiry script${NC} : ${NC}$Exp${NC} "
 echo -e "       ${BIBlue}╘═════════════════════════════════════╛${NC}"
 echo
 read -p " Select menu : " opt
