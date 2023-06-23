@@ -329,11 +329,11 @@ echo -e "         ${NC}             ${NC}[${NC}01${NC}] SSH     ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}02${NC}] VMESS   ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}03${NC}] VLESS   ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}04${NC}] TROJAN  ${NC}"
-echo -e "         ${NC}             ${NC}[${NC}05${NC}] SETING  ${NC}"
+echo -e "         ${NC}             ${NC}[${NC}05${NC}] SETTING  ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}06${NC}] TRIAL   ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}07${NC}] BACKUP   ${NC}"
 echo -e "                      ${NC}[${NC}08${NC}] ADD-HOST      ${NC}"
-echo -e "                      ${NC}[${NC}08${NC}] CEK RUNNING      ${NC}"
+echo -e "                      ${NC}[${NC}09${NC}] CEK RUNNING      ${NC}"
 echo -e "  ${BIBlue} ╘════════════════════════════════════════════╛${NC}"
 
 
