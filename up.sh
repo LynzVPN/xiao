@@ -216,6 +216,7 @@ chmod +x tcp
 chmod +x swap
 chmod +x log-ssh
 chmod +x addxlord
+chmod +x update
 cd
 
 echo -e " [INFO] Update Successfully"
