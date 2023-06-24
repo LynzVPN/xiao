@@ -22,9 +22,9 @@ echo -e "\e[31mPermission Denied!\e[0m";
 exit 0
 fi
 clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       • SSH & OVPN MENU •         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m          SSH & OVPN MENU          \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e ""
 echo -e " [\e[36m•1\e[0m] Buat Akun SSH & OpenVPN "
 echo -e " [\e[36m•2\e[0m] Akun Trial SSH & OpenVPN "
@@ -42,7 +42,7 @@ echo -e ""
 echo -e   "Press x or [ Ctrl+C ] • Untuk-Keluar"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       •XLORD PROJECT TUNNEL•         \E[0m"
+echo -e "\E[0;100;33m       •Auto Script Xiao•         \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -p " Select menu :  "  opt
