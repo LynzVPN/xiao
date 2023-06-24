@@ -26,7 +26,7 @@ cat > /var/www/html/ssh-$LOGIN.txt <<-END
 _______________________________________________________
            Thank You For Using Our Services
                  SSH OVPN Account 
-        Autoscript Lite By Xlord
+        Autoscript Lite By Lynz
 _____________________script v.2_________________________
       System Request:Debian 9+/Ubuntu 18.04+/20+
       Author: XlordHost
@@ -111,7 +111,7 @@ TEXT="
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
 echo -e "\e[33m———————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m       XLORD TUNNELING            \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m       SSH OVPN Account            \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Username    : $LOGIN" | tee -a /etc/log-create-user.log
 echo -e "Password    : $PASSWD" | tee -a /etc/log-create-user.log

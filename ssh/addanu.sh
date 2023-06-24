@@ -26,7 +26,7 @@ cat > /etc/ssh/log-ssh-$user.txt <<-END
 _______________________________________________________
            Thank You For Using Our Services
                  SSH OVPN Account 
-        Autoscript Lite By Xlord
+        Autoscript By Lynz Tunnel
 _____________________script v.2_________________________
       System Request:Debian 9+/Ubuntu 18.04+/20+
       Author: XlordHost
@@ -74,7 +74,7 @@ END
 TEXT="
 clear
 echo -e "\e[33m———————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m       XLORD TUNNELING            \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m       Lynz TUNNELING            \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Username    : $LOGIN" | tee -a /etc/log-create-user.log
 echo -e "Password    : $PASSWD" | tee -a /etc/log-create-user.log

@@ -1,8 +1,8 @@
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e " \e[1;97m             CREATE TRIALL SSH OVPN ACCOUNT       \e[0m"
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-LOGIN=Xlord-SSH`</dev/urandom tr -dc 0-9 | head -c3`
-PASSWD=1Jam
+LOGIN=Trial-SSH`</dev/urandom tr -dc 0-9 | head -c3`
+PASSWD=123
 EXPIRED=1
 useradd -e `date -d "$EXPIRED days" +"%H"` -s /bin/false -M $LOGIN
 exp="$(chage -l $LOGIN | grep "Account expires" | awk -F": " '{print $2}')"
@@ -21,7 +21,7 @@ cat > /var/www/html/ssh-$LOGIN.txt <<-END
 =======================
 P R O J E C T  O F
 =======================
-Telegram: t.me/XlordVpn 
+Telegram: Lol
 =======================
 Format SSH OVPN Triall Account
 =======================
@@ -118,6 +118,7 @@ echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "SETING-UDP  : $domain:1-65535@$LOGIN:$PASSWD"
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "Payload Port 80  : GET / HTTP/1.1[crlf]Host: $domain[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "Payload Port 443 : GET wss://[host]/ HTTP/1.1[crlf]Host: $domain[host_port][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "OpenVPN WS SSL   : https://$domain:81/"$domain"-ws-ssl.ovpn"
