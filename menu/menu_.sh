@@ -1,6 +1,5 @@
 #!/bin/bash 
- # =========================================
-UPDATE="https://raw.githubusercontent.com/LynzVPN/xiao/main/update/update.sh" 
+ # ========================================= 
  vlx=$(grep -c -E "^#& " "/etc/xray/config.json") 
  let vla=$vlx/2 
  vmc=$(grep -c -E "^### " "/etc/xray/config.json") 
@@ -288,12 +287,11 @@ echo -e "         ${NC}             ${NC}[${NC}01${NC}] SSH     ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}02${NC}] VMESS   ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}03${NC}] VLESS   ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}04${NC}] TROJAN  ${NC}"
-echo -e "         ${NC}             ${NC}[${NC}05${NC}] SETTING  ${NC}"
+echo -e "         ${NC}             ${NC}[${NC}05${NC}] SETING  ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}06${NC}] TRIAL   ${NC}"
 echo -e "         ${NC}             ${NC}[${NC}07${NC}] BACKUP   ${NC}"
 echo -e "                      ${NC}[${NC}08${NC}] ADD-HOST      ${NC}"
 echo -e "                      ${NC}[${NC}09${NC}] CEK RUNNING      ${NC}"
-echo -e "         ${NC}             ${NC}[${NC}10${NC}] UPDATE     ${NC}"
 echo -e "  ${BIBlue} ╘════════════════════════════════════════════╛${NC}"
 
 
@@ -322,7 +320,7 @@ case $opt in
 7) clear ; menu-backup ;;
 8) clear ; addhost ;;
 9) clear ; running ;;
-10) clear ; wget ${UPDATE} && chmod +x update.sh && ./update.sh ;;
+6969) clear ; wget https://raw.githubusercontent.com/LynzVPN/xiao/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;

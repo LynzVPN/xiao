@@ -14,23 +14,15 @@ Red_background="\033[41;37m"
 Suffix="\033[0m"
 
 
-echo -e "${ungu}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e
-echo -e "${BlueCyan}              Menu Backup                   "
-echo -e
-echo -e "       
-echo -e "${ungu}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo
-echo
-echo -e "${BlueCyan}Pilih Nomor: "
-echo
-echo "1).Backup"
-echo "2).Restore"
-echo "3).strt"
-echo "4).limit speed"
-echo "5).autobackup"
-echo
-echo -e "${ungu}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m               MENU BACKUP                  \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo "${NC}1).Backup"
+echo "${NC}2).Restore"
+echo "${NC}3).strt"
+echo "${NC}4).limit speed"
+echo "${NC}5).autobackup"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo
 echo -e "${BlueCyan}"
 read -p    "Pilih Nomor └╼>>>" bro

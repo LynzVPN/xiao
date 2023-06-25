@@ -107,17 +107,16 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}TROJAN ${NC}"
-echo -e ""
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Create Account Trojan    "
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account Trojan     "
-echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Extending Account Trojan Active Life      "
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Delete Account Trojan     "
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] Check User Login Trojan     "
-
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
-echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m               MENU TROJAN                 \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "     ${NC}[${NC}01${NC}] Create Account Trojan    "
+echo -e "     ${NC}[${NC}02${NC}] Trial Account Trojan     "
+echo -e "     ${NC}[${NC}03${NC}] Extending Account Trojan Active     "
+echo -e "     ${NC}[${NC}04${NC}] Delete Account Trojan     "
+echo -e "     ${NC}[${NC}05${NC}] Check User Login Trojan     "
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "     ${NC}Press x or [ Ctrl+C ] • To-${NC}Exit${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""

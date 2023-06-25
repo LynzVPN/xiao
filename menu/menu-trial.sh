@@ -107,16 +107,15 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}TRIALL ${NC}"
-echo -e ""
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Trial Account SSH & OVPN   "
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account VMESS    "
-echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Trial Account VLESS     "
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Trial Account TROJAN   "
-
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
-echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m               MENU TRIALL                  \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "     ${NC}[${NC}01${NC}] Trial Account SSH & OVPN   "
+echo -e "     ${NC}[${NC}02${NC}] Trial Account VMESS    "
+echo -e "     ${NC}[${NC}03${NC}] Trial Account VLESS     "
+echo -e "     ${NC}[${NC}04${NC}] Trial Account TROJAN   "
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "     ${NC}Press x or [ Ctrl+C ] • To-${NC}Exit${NC}"
 echo ""
 read -p " Select menu : " opt
 echo -e ""
