@@ -6,11 +6,9 @@ BG="\E[44;1;39m"
 
 NC="\E[0m"
 
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-
-echo -e "  ${BG} >>> INFORMASI UPDATE SCRIP <<< ${NC}"
-
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m            INFORMASI UPDATE SCRIPT         \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 
 echo -e "      •> Add UDP Server <•" | lolcat
 
@@ -18,13 +16,9 @@ echo -e "    •> Install UDP Server <•" | lolcat
 
 echo -e "      •> Fix Bug Script <•" | lolcat
 
-echo -e "     •> Script By @XlordVpn <•" | lolcat
-
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-
-echo -e "  ${BG} >>> THANKS TO Xlordvpn <<< ${NC}" 
-
-echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m                THANKS FOR UPDATE           \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 
 sleep 3
 echo -e " [INFO] Downloading Update File"
