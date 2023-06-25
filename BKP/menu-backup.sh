@@ -14,23 +14,16 @@ Red_background="\033[41;37m"
 Suffix="\033[0m"
 
 
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo -e
-echo -e "${BlueCyan}              Menu Backup                   "
-echo -e
-echo -e "            t.me/xlord27"
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo
-echo
-echo -e "${BlueCyan}Pilih Nomor: "
-echo
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m                MENU BACKUP                 \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "${NC}Pilih Nomor: "
 echo "1).Backup"
 echo "2).Restore"
 echo "3).strt"
 echo "4).limit speed"
 echo "5).autobackup"
-echo
-echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo
 echo -e "${BlueCyan}"
 read -p    "Pilih Nomor └╼>>>" bro
