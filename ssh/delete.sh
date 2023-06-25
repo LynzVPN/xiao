@@ -1,11 +1,11 @@
 clear
 
                hariini=`date +%d-%m-%Y`
-               echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-               echo -e " \E[0;41;36m               AUTO DELETE              \E[0m"
-               echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"  
+               echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m               AUTO DELETE                  \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"  
                echo "Thank you for removing the EXPIRED USERS"
-               echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"  
+               echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
                cat /etc/shadow | cut -d: -f1,8 | sed /:$/d > /tmp/expirelist.txt
                totalaccounts=`cat /tmp/expirelist.txt | wc -l`
                for((i=1; i<=$totalaccounts; i++ ))
@@ -37,7 +37,7 @@ clear
                fi
                done
                echo " "
-               echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"  
+               echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
                
                read -n 1 -s -r -p "Press any key to back menu ssh"
                menu

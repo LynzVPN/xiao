@@ -1,5 +1,5 @@
 echo -e "\033[1;93m─────────────────────────────────────────\033[0m"
-echo -e "\e[42m          Detail Member Aktif        \E[0m"
+echo -e "\e[42m            Detail Member Aktif          \E[0m"
 echo -e "\033[1;93m─────────────────────────────────────────\033[0m"
 
 if [ -e "/var/log/auth.log" ]; then

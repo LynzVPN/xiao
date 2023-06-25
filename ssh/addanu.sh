@@ -1,6 +1,6 @@
-echo -e "\033[1;93m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\e[42m              SSH Ovpn Account           \E[0m"
-echo -e "\033[1;93m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m              SSH & OVPN ACCOUNT            \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 read -p "Username : " LOGIN
 read -p "Password : " PASSWD
 read -p "Expired (hari): " EXPIRED
@@ -26,7 +26,7 @@ cat > /etc/ssh/log-ssh-$user.txt <<-END
 _______________________________________________________
            Thank You For Using Our Services
                  SSH OVPN Account 
-        Autoscript By Lynz Tunnel
+        Autoscript Lite By Xlord
 _____________________script v.2_________________________
       System Request:Debian 9+/Ubuntu 18.04+/20+
       Author: XlordHost
@@ -73,20 +73,16 @@ __________________________________
 END
 TEXT="
 clear
-echo -e "\e[33m———————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m       Lynz TUNNELING            \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m       SSH & OVPN ACCOUNT            \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Username    : $LOGIN" | tee -a /etc/log-create-user.log
 echo -e "Password    : $PASSWD" | tee -a /etc/log-create-user.log
 echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
-echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m           INFORMASI SERVER      \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
 echo -e "Domain        : $domain" | tee -a /etc/log-create-user.log
 echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
-echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH     : 22" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS      : 80" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS  : 443" | tee -a /etc/log-create-user.log
@@ -97,21 +93,11 @@ echo -e "SSH-80      : $domain:80@$LOGIN:$PASSWD"
 echo -e "SSH-443     : $domain:443@$LOGIN:$PASSWD"
 echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "SETING-UDP  : $domain:1-65535@$LOGIN:$PASSWD"
-#echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-#echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
-echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
+echo -e "\e[33m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On     : $exp" | tee -a /etc/log-create-user.log
-echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Payload WSS" | tee -a /etc/log-create-user.log
-echo -e "
-GET wss://$domain [protocol][crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]
-" | tee -a /etc/log-create-user.log
-echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Payload WS" | tee -a /etc/log-create-user.log
-echo -e "
-GET / HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]
-" | tee -a /etc/log-create-user.log
-echo -e "\e[33m————————————————————————————————\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
 menu

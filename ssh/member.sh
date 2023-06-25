@@ -1,9 +1,9 @@
 #!/bin/bash
 clear
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[1;97;101m              LIST MEMBER               \e[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\033[1;36mUSERNAME       EXPIRED              \033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m               LIST MEMBER                  \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "   \033[42mUSERNAME       EXPIRED              \033[0m"
 while read expired
 do
         AKUN="$(echo $expired | cut -d: -f1)"
@@ -14,9 +14,9 @@ do
         fi
 done < /etc/passwd
 JUMLAH="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e "TOTAL ACCOUNT:   \e[1;97;101m$JUMLAH USER \e[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e ""
 read -n 1 -s -r -p "Press [enter] to back menu ssh"
 menu

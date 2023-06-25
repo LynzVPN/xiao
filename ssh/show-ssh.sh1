@@ -1,8 +1,8 @@
 NUMBER_OF_CLIENTS= User egrep "^$User" /etc/passwd
         if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
-    echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-    echo -e " \e[1;97;101m               NICKNAME SSH                   \e[0m"
-    echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+    echo -e "\033[1;93m─────────────────────────────────────────\033[0m"
+echo -e "\e[42m            NICKNAME SSH          \E[0m"
+echo -e "\033[1;93m─────────────────────────────────────────\033[0m"
     echo ""
     echo "You have no existing clients!"
     echo ""
@@ -11,9 +11,9 @@ NUMBER_OF_CLIENTS= User egrep "^$User" /etc/passwd
     menu
 fi
 
-  echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-  echo -e " \e[1;97;101m                ABOUT MEMBER SSH                 \E[0m"
-  echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+  echo -e "\033[1;93m─────────────────────────────────────────\033[0m"
+echo -e "\e[42m            ABOUT MEMBER SSH          \E[0m"
+echo -e "\033[1;93m─────────────────────────────────────────\033[0m"
         echo "     No  User   Nick"
         grep -E "^$User" /etc/passwd >/dev/null
         until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do

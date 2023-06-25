@@ -1,15 +1,13 @@
 clear
-    echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-  echo -e " \e[1;97;101m          AUTO KILL       \e[0m"
-  echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Status Autokill : $sts        "
-echo -e ""
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m                AUTO KILL                   \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "          Status Autokill : $sts        "
 echo -e "[1]  AutoKill After 5 Minutes"
 echo -e "[2]  AutoKill After 10 Minutes"
 echo -e "[3]  AutoKill After 15 Minutes"
 echo -e "[4]  Turn Off AutoKill/MultiLogin"
-echo ""
-echo -e "\e[1m==============================================\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e ""
 read -p "Select From Options [1-4 or x] :  " AutoKill
 if [ -z $AutoKill ]; then
