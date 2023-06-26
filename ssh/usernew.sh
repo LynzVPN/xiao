@@ -111,27 +111,22 @@ TEXT="
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
 echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m       SSH & OVPN ACCOUNT            \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37m       SSH ACCOUNT            \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Username    : $LOGIN" | tee -a /etc/log-create-user.log
 echo -e "Password    : $PASSWD" | tee -a /etc/log-create-user.log
 echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
 echo -e "Domain        : $domain" | tee -a /etc/log-create-user.log
-echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
-echo -e "PubKey      : $slkey" | tee -a /etc/log-create-user.log
 echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH     : 22" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS      : 80" | tee -a /etc/log-create-user.log
-echo -e "SSH-SSL-WS  : 443" | tee -a /etc/log-create-user.log
+echo -e "SSH-SSL-WS : 443" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS     : 447 , 777" | tee -a /etc/log-create-user.log
-echo -e "SlowDNS     : 53,5300,443" 
-echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domain:80@$LOGIN:$PASSWD"
-echo -e "SSH-443     : $domain:443@$LOGIN:$PASSWD"
-echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
-echo -e "SETING-UDP  : $domain:1-65535@$LOGIN:$PASSWD"
-echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
+echo -e "DROPBEAR   : 109,143" 
+echo -e "UDPGW      : 7100-7300" | tee -a /etc/log-create-user.log
+echo -e "SSH-UDP    : 1-65535" | tee -a /etc/log-create-user.log
+#echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+#echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
 echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Expired On     : $exp" | tee -a /etc/log-create-user.log
 echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
