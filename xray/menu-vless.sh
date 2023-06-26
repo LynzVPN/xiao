@@ -394,10 +394,9 @@ menu-vless
 
 
 clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       •  VLESS MENU •            \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m               MENU VLESS                   \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e " [\e[36m•1\e[0m] Buat Akun XRAY Vless Websocket "
 echo -e " [\e[36m•2\e[0m] Trial Akun XRAY Vless "
 echo -e " [\e[36m•3\e[0m] Extending Akun XRAY Vless Active Life "
@@ -409,10 +408,7 @@ echo -e ""
 echo -e " [\e[31m•0\e[0m] \e[31mKEMBALI KE MENU\033[0m"
 echo -e ""
 echo -e   "Press x or [ Ctrl+C ] • Untuk-Keluar"
-echo ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       •LYNZ PROJECT TUNNEL•         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""

@@ -186,18 +186,18 @@ function addtrojan(){
 domain=$(cat /etc/xray/domain)
 tr="$(cat ~/log-install.txt | grep -w "Trojan WS " | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
-  echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+  echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
   echo -e " \e[1;97;101m            ADD TROJAN ACCOUNT            \e[0m"  
-  echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+  echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 
   read -rp "User: " -e user
   user_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
 
   if [[ ${user_EXISTS} == '1' ]]; then
     clear
-    echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
   echo -e " \e[1;97;101m            ADD TROJAN ACCOUNT            \e[0m"  
-  echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+  echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     echo ""
     echo "A client with the specified name was already created, please choose another name."
     echo ""
@@ -328,9 +328,9 @@ fi
 echo "#tr# ${user} ${exp} ${uuid} ${Quota}" >>/etc/trojan/.trojan.db
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[1;97;101m            SUCCES CREAT TROJAN ACCOUNT               \e[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m                ACCOUNT TROJAN                   \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"di
 echo -e "Remarks        : ${user}"
 echo -e "Host           : ${domain}"
 echo -e "Location       : $CITY"
@@ -342,42 +342,38 @@ echo -e "AlterID        : 0"
 echo -e "Security       : auto"
 echo -e "Path           : /trojan"
 echo -e "Network        : WS(TLS) or gRPC"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e "Link WS   : ${trojanlink}"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e "Link GRPC : ${trojanlink1}"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e "Format OpenClash : https://${domain}:81/trojan-$user.txt"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e "Aktif Selama   : $masaaktif Hari"
 echo -e "Dibuat Pada    : $tnggl"
 echo -e "Berakhir Pada  : $expe"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e ""
 read -n 1 -s -r -p "Press [ Enter ] to back menu trojan"
 menu
 }
 
 clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m      • TROJAN  MENU •          \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m                MENU TROJAN                 \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e " [\e[0m•1\e[0m] Buat Akun Trojan "
+echo -e " [\e[0m•2\e[0m] Trial Akun Trojan "
+echo -e " [\e[0m•3\e[0m] Extending Akun Trojan Active  "
+echo -e " [\e[0m•4\e[0m] Delete Akun Trojan "
+echo -e " [\e[0m•5\e[0m] Check User Login Trojan "
+echo -e " [\e[0m•6\e[0m] Check User Trojan "
+echo -e " [\e[0m•7\e[0m] Usage User  Trojan "
 echo -e ""
-echo -e " [\e[36m•1\e[0m] Buat Akun Trojan "
-echo -e " [\e[36m•2\e[0m] Trial Akun Trojan "
-echo -e " [\e[36m•3\e[0m] Extending Akun Trojan Active Life "
-echo -e " [\e[36m•4\e[0m] Delete Akun Trojan "
-echo -e " [\e[36m•5\e[0m] Check User Login Trojan "
-echo -e " [\e[36m•6\e[0m] Check User Trojan "
-echo -e " [\e[36m•7\e[0m] Usage User  Trojan "
-echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mMENU KE MENU\033[0m"
+echo -e " [\e[0m•0\e[0m] \e[31mMENU KE MENU\033[0m"
 echo -e   ""
 echo -e   "Press x or [ Ctrl+C ] • Untuk-Keluar"
-echo ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       • LYNZ PROJECT TUNNEL•         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e ""
 read -p " Select menu : " opt
 echo -e ""

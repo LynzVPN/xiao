@@ -29,21 +29,21 @@ green='\e[0;32m'
 NC='\e[0m'
 NUMBER_OF_CLIENTS=$(grep -c -E "^#tr# " "/etc/trojan/.trojan.db")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
-		 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-         echo -e " \e[1;97;101m        RENEW TROJAM ACCOUNT           \e[0m"
-         echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+		 echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m            RENEW TROJAN  ACCOUNT           \033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 		echo ""
 		echo "You have no existing clients!"
         echo ""
 		exit 1
 	fi
-	echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-         echo -e " \e[1;97;101m        RENEW TROJAN ACCOUNT           \e[0m"
-         echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+	echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m            RENEW TROJAN  ACCOUNT           \033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
          echo "     NO    User    Expired  "
 	
 	grep -E "^#tr# " "/etc/trojan/.trojan.db" | cut -d ' ' -f 2-3 | nl -s ') '
-         echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+         echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
@@ -66,12 +66,12 @@ sed -i "s/#tr# $user $exp/#tr# $user $exp4/g" /etc/xray/config.json
 sed -i "s/#tr# $user $exp/#tr# $user $exp4/g" /etc/trojan/.trojan.db
 systemctl reload xray
 clear
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[1;97;101m       RENNEW TROJAN ACCOUNT SUCCESS      \e[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m            RENEW TROJAN  ACCOUNT           \033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo " Client Name : $user"
 echo " Expired On  : $exp4"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e ""
 read -n 1 -s -r -p "Press [ Enter ] to back on menu"
 menu

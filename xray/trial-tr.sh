@@ -34,11 +34,11 @@ CHATID=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 3)
 KEY=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 2)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[1;97;101m     CREATE TRIALL TROJAN ACCOUNT       \e[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m         CREATE TRIAL TROJAN ACCOUNT        \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 masaaktif=1
-Quota=5
+Quota=1
 user=Trial-TR`</dev/urandom tr -dc 0-9 | head -c3`
 clear
 uuid=$(cat /proc/sys/kernel/random/uuid)
@@ -51,7 +51,7 @@ cat >/var/www/html/trojan-$user.txt <<-END
 =============================
          P R O J E C T
 =============================
- Owner: t.me/XlordVpn
+ Owner: 
 =============================
  Format Trojan GO/WS (CDN)
 =============================
@@ -154,12 +154,12 @@ echo "#tr# ${user} ${exp} ${uuid} ${Quota}" >>/etc/trojan/.trojan.db
 
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 clear
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[1;97;101m   SUCCES TRIALL TROJAN ACCOUNT      \e[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m            TRIAL TROJAN ACCOUNT            \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e "Remarks        : ${user}"
 echo -e "Host           : ${domain}"
-echo -e "Location       : $CITY"
+echo -e "Location       : ${CITY}"
 echo -e "User Quota     : ${Quota} GB"
 echo -e "Port WS(TLS)   : 443"
 echo -e "Port  gRPC     : 443"
@@ -168,15 +168,16 @@ echo -e "AlterID        : 0"
 echo -e "Security       : auto"
 echo -e "Path           : /trojan"
 echo -e "Network        : WS(TLS) or gRPC"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Link WS   : ${trojanlink}"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Link GRPC : ${trojanlink1}"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "Link WS          : ${trojanlink}"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "Link GRPC        : ${trojanlink1}"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e "Format OpenClash : https://${domain}:81/trojan-$user.txt"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "Expired On : $exp"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+echo -e "Created On       : $hariini"
+echo -e "Expired On       : $exp"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e ""
 read -n 1 -s -r -p "Press [ Enter ] to back on menu"
 menu

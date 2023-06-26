@@ -498,7 +498,7 @@ menu-vmess
 
 clear
 echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
-    echo -e "\033[42m           MENU VMESS              \033[0m"
+    echo -e "\033[42m               MENU VMESS                   \033[0m"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 echo -e " [\e[36m•1\e[0m] Buat Akun XRAY Vmess Websocket "
 echo -e " [\e[36m•2\e[0m] Trial Akun XRAY Vmess "

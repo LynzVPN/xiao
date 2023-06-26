@@ -41,9 +41,9 @@ print_sum() {
     | column -t
 }
 DATA=$(apidata $1)
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m      • USAGE USER TROJAN •          \E[0m"
-echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m$NC"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m              USAGE TROJAN                  \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 print_sum "$DATA" "user" "$NC"
 echo -e ""
 read -n 1 -s -r -p "Press [enter] to back on menu trojan"

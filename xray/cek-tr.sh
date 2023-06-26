@@ -28,9 +28,9 @@ clear
 echo -n >/tmp/other.txt
 data=($(cat /etc/xray/config.json | grep '^#tr#' | cut -d ' ' -f 2 | sort | uniq))
 
-    echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-    echo -e " \e[1;97;101m           CEK TROJAN ACCOUNT           \e[0m"
-    echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
+    echo -e "\033[42m              CEK TROJAN ACCOUNT                   \033[0m"
+    echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
 
 for akun in "${data[@]}"; do
     if [[ -z "$akun" ]]; then
@@ -58,7 +58,7 @@ for akun in "${data[@]}"; do
         jum2=$(cat /tmp/iptrojan.txt | nl)
         echo "user : $akun"
         echo "$jum2"
-        echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+        echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     fi
     rm -rf /tmp/iptrojan.txt
 done
