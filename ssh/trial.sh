@@ -99,34 +99,26 @@ TEXT="
 "
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
-echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e " \e[1;97m             SUCCESS CREATE TRIALL ACCOUNT      \e[0m"
-echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "Username         : $LOGIN"
-echo -e "Password         : $PASSWD"
-echo -e "Expired          : $exp"
-echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+    echo -e "\033[42m             TRIAL SSH ACCOUNT                 \033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Username    : $LOGIN" | tee -a /etc/log-create-user.log
+echo -e "Password    : $PASSWD" | tee -a /etc/log-create-user.log
+echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
+echo -e "Domain      : $domain" | tee -a /etc/log-create-user.log
+echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH     : 22" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS      : 80" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS  : 443" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS     : 447 , 777" | tee -a /etc/log-create-user.log
-echo -e "SlowDNS     : 53,5300,443" 
+echo -e "DROPBEAR    : 109,143" 
 echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
-echo -e "SSH-80      : $domain:80@$LOGIN:$PASSWD"
-echo -e "SSH-443     : $domain:443@$LOGIN:$PASSWD"
 echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
-echo -e "SETING-UDP  : $domain:1-65535@$LOGIN:$PASSWD"
-echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "Payload Port 80  : GET / HTTP/1.1[crlf]Host: $domain[crlf]Connection: Upgrade[crlf]User-Agent: [ua][crlf]Upgrade: websocket[crlf][crlf]"
-echo -e "Payload Port 443 : GET wss://[host]/ HTTP/1.1[crlf]Host: $domain[host_port][crlf]Upgrade: Websocket[crlf]Connection: Keep-Alive[crlf]Upgrade: websocket[crlf][crlf]"
-echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "OpenVPN WS SSL   : https://$domain:81/"$domain"-ws-ssl.ovpn"
-echo -e "OpenVPN SSL      : https://$domain:81/"$domain"-ssl.ovpn"
-echo -e "OpenVPN TCP      : https://$domain:81/"$domain"-tcp.ovpn"
-echo -e "OpenVPN UDP      : https://$domain:81/"$domain"-udp.ovpn"
-echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "Save Link Account: https://$domain:81/ssh-$LOGIN.txt"
-echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e ""
-read -n 1 -s -r -p "Press [ Enter ] to back menu ssh"
+#echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+#echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
+echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
+echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+echo "" | tee -a /etc/log-create-user.log
+read -n 1 -s -r -p "Press any key to back on menu"
 menu

@@ -110,25 +110,25 @@ TEXT="
 "
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
-echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m       SSH ACCOUNT            \E[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
+    echo -e "\033[42m                SSH ACCOUNT                 \033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[1;93m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Username    : $LOGIN" | tee -a /etc/log-create-user.log
 echo -e "Password    : $PASSWD" | tee -a /etc/log-create-user.log
 echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
-echo -e "Domain       : $domain" | tee -a /etc/log-create-user.log
+echo -e "Domain      : $domain" | tee -a /etc/log-create-user.log
 echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH     : 22" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS      : 80" | tee -a /etc/log-create-user.log
-echo -e "SSH-SSL-WS : 443" | tee -a /etc/log-create-user.log
+echo -e "SSH-SSL-WS  : 443" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS     : 447 , 777" | tee -a /etc/log-create-user.log
-echo -e "DROPBEAR   : 109,143" 
-echo -e "UDPGW      : 7100-7300" | tee -a /etc/log-create-user.log
-echo -e "SSH-UDP    : 1-65535" | tee -a /etc/log-create-user.log
+echo -e "DROPBEAR    : 109,143" 
+echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
+echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 #echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 #echo -e "OpenVPN Config : http://$IP:81/" | tee -a /etc/log-create-user.log
 echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Expired On     : $exp" | tee -a /etc/log-create-user.log
+echo -e "Expired On  : $exp" | tee -a /etc/log-create-user.log
 echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
