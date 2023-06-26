@@ -116,7 +116,7 @@ echo -e "\e[33m─────────────────────�
 echo -e "Username    : $LOGIN" | tee -a /etc/log-create-user.log
 echo -e "Password    : $PASSWD" | tee -a /etc/log-create-user.log
 echo -e "IP          : $IP" | tee -a /etc/log-create-user.log
-echo -e "Domain        : $domain" | tee -a /etc/log-create-user.log
+echo -e "Domain       : $domain" | tee -a /etc/log-create-user.log
 echo -e "\e[33m─────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH     : 22" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS      : 80" | tee -a /etc/log-create-user.log
