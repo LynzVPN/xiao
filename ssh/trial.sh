@@ -4,6 +4,7 @@ echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━
 LOGIN=Trial-SSH`</dev/urandom tr -dc 0-9 | head -c3`
 PASSWD=1
 EXPIRED=1
+domain=`cat /etc/xray/domain`
 useradd -e `date -d "$EXPIRED days" +"%H"` -s /bin/false -M $LOGIN
 exp="$(chage -l $LOGIN | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$PASSWD\n$PASSWD\n"|passwd $LOGIN &> /dev/null
@@ -21,7 +22,7 @@ cat > /var/www/html/ssh-$LOGIN.txt <<-END
 =======================
 P R O J E C T  O F
 =======================
-Telegram: t.me/XlordVpn 
+Telegram: 
 =======================
 Format SSH OVPN Triall Account
 =======================
@@ -100,7 +101,7 @@ TEXT="
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL
 clear
 echo -e "\033[1;93m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
-    echo -e "\033[42m             TRIAL SSH ACCOUNT                 \033[0m" | tee -a /etc/log-create-user.log
+    echo -e "\033[42m             TRIAL SSH ACCOUNT              \033[0m" | tee -a /etc/log-create-user.log
 echo -e "\033[1;93m────────────────────────────────────────────\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Username    : $LOGIN" | tee -a /etc/log-create-user.log
 echo -e "Password    : $PASSWD" | tee -a /etc/log-create-user.log
