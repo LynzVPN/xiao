@@ -5,6 +5,7 @@ LOGIN=Trial-SSH`</dev/urandom tr -dc 0-9 | head -c3`
 PASSWD=1
 EXPIRED=1
 domain=`cat /etc/xray/domain`
+IP=$(curl -sS ifconfig.me)
 useradd -e `date -d "$EXPIRED days" +"%H"` -s /bin/false -M $LOGIN
 exp="$(chage -l $LOGIN | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$PASSWD\n$PASSWD\n"|passwd $LOGIN &> /dev/null
