@@ -1,11 +1,11 @@
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e " \e[1;97m             CREATE TRIALL SSH OVPN ACCOUNT       \e[0m"
 echo -e "\033[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+IP=$(curl -sS ifconfig.me)
 LOGIN=Trial-SSH`</dev/urandom tr -dc 0-9 | head -c3`
 PASSWD=1
 EXPIRED=1
 domain=`cat /etc/xray/domain`
-IP=$(curl -sS ifconfig.me)
 useradd -e `date -d "$EXPIRED days" +"%H"` -s /bin/false -M $LOGIN
 exp="$(chage -l $LOGIN | grep "Account expires" | awk -F": " '{print $2}')"
 echo -e "$PASSWD\n$PASSWD\n"|passwd $LOGIN &> /dev/null
